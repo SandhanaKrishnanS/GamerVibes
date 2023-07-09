@@ -1,0 +1,64 @@
+footer {
+    padding: 0;
+    margin: 0 ;
+}
+
+.footer {
+    display: fl;
+    bottom: 0;
+    padding: 0 0 24px 0;
+    width: 100%;
+    height: 150px;
+    border-top: solid 2px snow;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 10px;
+}
+
+.footerLogo img {
+    order: 0;
+    margin: 16px;
+    width: 200px;
+    height: 75px;
+    display: block;
+    float: left;
+}
+
+.footerCopy {
+    order: 1;
+    color: whitesmoke;
+    width: 350px;
+    display: block;
+    float: left;
+    padding: 64px 0 0 0;
+}
+
+.footerMention {
+    color: whitesmoke;
+    float: right;   
+    display: block;
+    position: relative;
+    right: 20px ;
+    bottom: 90px;
+}
+
+.footerDisclimer {
+    order: 2;
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+    float: right;
+    position: relative;
+    right: 10px;
+    bottom: 72px;
+}
+
+.footerMention span {
+    color: red;
+}
