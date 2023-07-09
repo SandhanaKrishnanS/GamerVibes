@@ -27,54 +27,54 @@ function countDown() {
     return val;
   }
   
-  function getUserInput(guessNo) {
-    const userInput = prompt(`Enter Your Guess Number ${guessNo}:`);
-    return userInput.toString();
-  }
+  // function getUserInput(guessNo) {
+  //   const userInput = prompt(`Enter Your Guess Number ${guessNo}:`);
+  //   return userInput.toString();
+  // }
   
-  function validate(guess, num) {
-    let count = 0;
-    for (let i = 0; i < 4; i++) {
-      if (num[i] === guess[i]) {
-        console.log("Right");
-        count++;
-      } else if (num.includes(guess[i])) {
-        console.log("Slightly Wrong");
-      } else {
-        console.log("Wrong");
-      }
-    }
-    if (count === 4) {
-      setTimeout(() => {
-        console.log("Congrats, You Won");
-        winCount++;
-        start();
-      }, 2000);
-    }
-    return count;
-  }
+  // function validate(guess, num) {
+  //   let count = 0;
+  //   for (let i = 0; i < 4; i++) {
+  //     if (num[i] === guess[i]) {
+  //       console.log("Right");
+  //       count++;
+  //     } else if (num.includes(guess[i])) {
+  //       console.log("Slightly Wrong");
+  //     } else {
+  //       console.log("Wrong");
+  //     }
+  //   }
+  //   if (count === 4) {
+  //     setTimeout(() => {
+  //       console.log("Congrats, You Won");
+  //       winCount++;
+  //       start();
+  //     }, 2000);
+  //   }
+  //   return count;
+  // }
   
-  function guess(num) {
-    let guessNo = 0;
-    let flag = 0;
-    while (guessNo !== 5) {
-      let guess = getUserInput(guessNo + 1);
-      guessNo++;
-      let end = validate(guess, num);
-      if (end === 4) {
-          flag = 0;
-          break;
-      }
-      flag++;
-    }
-    if(flag > 0) {
-         setTimeout(() => {
-        console.log("Oh, You Lost");
-        start();
-      }, 2);
-    }
-    x++;
-  }
+  // function guess(num) {
+  //   let guessNo = 0;
+  //   let flag = 0;
+  //   while (guessNo !== 5) {
+  //     let guess = getUserInput(guessNo + 1);
+  //     guessNo++;
+  //     let end = validate(guess, num);
+  //     if (end === 4) {
+  //         flag = 0;
+  //         break;
+  //     }
+  //     flag++;
+  //   }
+  //   if(flag > 0) {
+  //        setTimeout(() => {
+  //       console.log("Oh, You Lost");
+  //       start();
+  //     }, 2);
+  //   }
+  //   x++;
+  // }
   
   function start() {
       if ( x === 0) {
